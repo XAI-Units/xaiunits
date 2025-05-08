@@ -4,7 +4,7 @@
 
 Welcome to the XAI-Units package repository! This is a library to help benchmark and compare explainable AI feature attribution methods. It contains a collection of datasets and models with specific units of behaviour that are known to be challenging for feature attribution methods. The library also contains an end-to-end pipeline for applying feature attribution methods across a range of datasets/models, scoring them with metrics, then summarising the results.
 
-Please also visit our [documentation page](https://xai-units.github.io/xaiunits_public/.) for additional references.
+Please also visit our [documentation page](https://xai-units.github.io/xaiunits/.) for additional references.
 
 ![alt text](image-3.png)
 
