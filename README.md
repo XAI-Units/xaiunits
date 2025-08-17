@@ -4,7 +4,7 @@
 
 Welcome to the XAI-Units package repository! This is a library to help benchmark and compare explainable AI feature attribution methods. It contains a collection of datasets and models with specific units of behaviour that are known to be challenging for feature attribution methods. The library also contains an end-to-end pipeline for applying feature attribution methods across a range of datasets/models, scoring them with metrics, then summarising the results.
 
-Please also visit our [documentation page](https://xai-units.github.io/xaiunits/.) for additional references.
+Please also check out the associated paper "[XAI-Units: Benchmarking Explainability Methods with Unit Tests](https://dl.acm.org/doi/10.1145/3715275.3732186)" and visit our [documentation page](https://xai-units.github.io/xaiunits/) for additional information.
 
 ![alt text](image-3.png)
 
@@ -215,20 +215,20 @@ If you find our paper or code useful in your research, please consider citing th
 
 ```
 @inproceedings{10.1145/3715275.3732186,
-author = {Lee, Jun Rui and Emami, Sadegh and Hollins, Michael David and Wong, Timothy C. H. and Villalobos S\'{a}nchez, Carlos Ignacio and Toni, Francesca and Zhang, Dekai and Dejl, Adam},
-title = {XAI-Units: Benchmarking Explainability Methods with Unit Tests},
-year = {2025},
-isbn = {9798400714825},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3715275.3732186},
-doi = {10.1145/3715275.3732186},
-booktitle = {Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
-pages = {2892–2905},
-numpages = {14},
-keywords = {explainable AI, feature attribution, neural networks, synthetic data, synthetic models, unit testing},
-location = {
-},
-series = {FAccT '25}
+	author = {Lee, Jun Rui and Emami, Sadegh and Hollins, Michael David and Wong, Timothy C. H. and Villalobos S\'{a}nchez, Carlos Ignacio and Toni, Francesca and Zhang, Dekai and Dejl, Adam},
+	title = {XAI-Units: Benchmarking Explainability Methods with Unit Tests},
+	year = {2025},
+	isbn = {9798400714825},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3715275.3732186},
+	doi = {10.1145/3715275.3732186},
+	booktitle = {Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
+	pages = {2892–2905},
+	numpages = {14},
+	keywords = {explainable AI, feature attribution, neural networks, synthetic data, synthetic models, unit testing},
+	location = {
+	},
+	series = {FAccT '25}
 }
 ```
