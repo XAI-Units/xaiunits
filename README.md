@@ -11,21 +11,21 @@ Please also visit our [documentation page](https://xai-units.github.io/xaiunits/
 ## Table of Contents
 
 - [Overview](#overview)
-	- [Table of Contents](#table-of-contents)
-	- [Project structure](#project-structure)
-	- [Installation Guide](#installation-guide)
-	- [Examples](#example)
-	- [Getting started](#getting-started)
-	- [Further Resources](#further-resources)
-		- [Tutorials](#tutorials)
-		- [Documentation](#documentation)
-	- [Current Features](#current-features)
-		- [Datasets](#datasets)
-		- [Models](#models)
-		- [Methods](#methods)
-		- [Metrics](#metrics)
-		- [Pipeline](#pipeline)
-		- [Trainer](#trainer)
+  - [Table of Contents](#table-of-contents)
+  - [Project structure](#project-structure)
+  - [Installation Guide](#installation-guide)
+  - [Examples](#example)
+  - [Getting started](#getting-started)
+  - [Further Resources](#further-resources)
+    - [Tutorials](#tutorials)
+    - [Documentation](#documentation)
+  - [Current Features](#current-features)
+    - [Datasets](#datasets)
+    - [Models](#models)
+    - [Methods](#methods)
+    - [Metrics](#metrics)
+    - [Pipeline](#pipeline)
+    - [Trainer](#trainer)
 
 ## Project structure
 
@@ -49,13 +49,13 @@ Please also visit our [documentation page](https://xai-units.github.io/xaiunits/
 
 1. Clone the repo.
 2. Create a virtual environment.
-	* `python -m venv ./venv`
+   - `python -m venv ./venv`
 3. Activate the virtual environment then navigate to the root of the repo.
 4. Use the requirements.txt file to pip install the requirements.
-	* `pip install -r requirements.txt`
+   - `pip install -r requirements.txt`
 5. You may wish to upgrade the installed version of pytorch for GPU support. (Official benchmark models were trained on pytorch-cuda=12.1).
 6. Install this library as a local editable package. Note the full stop . at the end of the command refers to the current directory i.e. the root of the repo
-	* `pip install -e .`
+   - `pip install -e .`
 
 ## Example
 
@@ -64,11 +64,11 @@ This folder contains real world example of experiments using our library that re
 1. Step 1: Follow the installation guide above so you have an active venv with the required packages installed.
 2. Step 2: Change the root folder to demo/example folder to ensure that relative file paths are intact, `cd ./demo/example`
 3. Step 3: select the appropriate Python script to reproduce experiment of choice (e.g. `python3 tabular.py`)
-	* Tabular Experiment : [tabular.py](/demo/examples/tabular.py)
-	* DeepLIFT Supplementary Experiment : [deeplift_suppl_exp.py](/demo/examples/deeplift_suppl_exp.py)
-	* Image Experiment CNN : [image.py](/demo/examples/image.py)
-	* Image Experiment ViT : [image.py](/demo/examples/image_vit.py)
-	* Image Experiment Text : [image.py](/demo/examples/text.py)
+   - Tabular Experiment : [tabular.py](/demo/examples/tabular.py)
+   - DeepLIFT Supplementary Experiment : [deeplift_suppl_exp.py](/demo/examples/deeplift_suppl_exp.py)
+   - Image Experiment CNN : [image.py](/demo/examples/image.py)
+   - Image Experiment ViT : [image.py](/demo/examples/image_vit.py)
+   - Image Experiment Text : [image.py](/demo/examples/text.py)
 
 ## Getting started
 
@@ -112,13 +112,13 @@ Add the metrics you want to use to the list, using wrap_metric
 metrics = [
     wrap_metric(sensitivity_max),
     wrap_metric(infidelity, perturb_func=dataset.perturb_function(), normalize=True),
-] 
+]
 ```
 
 You can add as many models as you want to the list for the Pipeline to run
 
 ```python
-models = [model] 
+models = [model]
 ```
 
 Add as many datasets as you want to the list. Make sure models and datasets are compatible with each other
@@ -208,3 +208,27 @@ See [metrics_wrapper.py](/src/xaiunits/methods/methods_wrapper.py)
 ### Trainer
 
 - AutoTrainer: [trainer.py](/src/xaiunits/trainer/trainer.py)
+
+## Citation
+
+If you find our paper or code useful in your research, please consider citing the original work:
+
+```
+@inproceedings{10.1145/3715275.3732186,
+author = {Lee, Jun Rui and Emami, Sadegh and Hollins, Michael David and Wong, Timothy C. H. and Villalobos S\'{a}nchez, Carlos Ignacio and Toni, Francesca and Zhang, Dekai and Dejl, Adam},
+title = {XAI-Units: Benchmarking Explainability Methods with Unit Tests},
+year = {2025},
+isbn = {9798400714825},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715275.3732186},
+doi = {10.1145/3715275.3732186},
+booktitle = {Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency},
+pages = {2892–2905},
+numpages = {14},
+keywords = {explainable AI, feature attribution, neural networks, synthetic data, synthetic models, unit testing},
+location = {
+},
+series = {FAccT '25}
+}
+```
